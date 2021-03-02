@@ -11,6 +11,18 @@
     <div class="toggle" onclick="toggleMenu()"></div>
     <section class="banner" id="home">
       <div class="imgSidebar">
+        <svg>
+          <filter id="dark-blue-sepia" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="1 0 0 0 0
+                      1 0 0 0 0
+                      1 0 0 0 0
+                      0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+            <feComponentTransfer in="colormatrix" result="componentTransfer">
+                  <feFuncR type="table" tableValues="0.29 0.15 0.97"/>
+              <feFuncG type="table" tableValues="0.04 0.39 0.93"/>
+              <feFuncB type="table" tableValues="0.32 0.52 0.73"/>
+              <feFuncA type="table" tableValues="0 1"/>
+        </svg>
         <img src="./img/bg.jpg" alt="" />
       </div>
       <div class="contentBx">
@@ -192,23 +204,23 @@
       <div class="contactForm">
         <div class="row">
           <div class="col50">
-            <input type="text" name="" id="" placeholder="First name" />
+            <input type="text" name="" placeholder="First name" />
           </div>
           <div class="col50">
-            <input type="text" name="" id="" placeholder="Last name" />
+            <input type="text" name="" placeholder="Last name" />
           </div>
         </div>
         <div class="row">
           <div class="col50">
-            <input type="email" name="" id="" placeholder="Email" />
+            <input type="email" name="" placeholder="Email" />
           </div>
           <div class="col50">
-            <input type="text" name="" id="" placeholder="Mobile No." />
+            <input type="text" name="" placeholder="Mobile No." />
           </div>
         </div>
         <div class="row">
           <div class="col100">
-            <textarea name="" id="" placeholder="Message"></textarea>
+            <textarea name="" placeholder="Message"></textarea>
           </div>
         </div>
         <div class="row">
@@ -234,8 +246,10 @@
       function toggleMenu() {
         const menuToggle = document.querySelector(".toggle");
         const sidebar = document.querySelector(".sidebar");
+        const imgSidebar = document.querySelector('.imgSidebar');
         menuToggle.classList.toggle("active");
         sidebar.classList.toggle("active");
+        imgSidebar.classList.toggle("active");
       }
     </script>
   </body>
