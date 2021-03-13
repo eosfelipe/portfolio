@@ -32,17 +32,17 @@ const Home = ({ isOpen }) => {
         <ul className="sci">
           <li>
             <a href="https://facebook.com">
-              <img src={Facebook} alt="" />
+              <img src={Facebook} alt="facebook" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com">
-              <img src={Twitter} alt="" />
+              <img src={Twitter} alt="twitter" />
             </a>
           </li>
           <li>
             <a href="https://instagram.com">
-              <img src={Instagram} alt="" />
+              <img src={Instagram} alt="instagram" />
             </a>
           </li>
         </ul>

@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import About from "./components/About/AboutComponent";
+import Contact from "./components/Contact/ContactComponent";
 import Home from "./components/Home/HomeComponent";
+import Services from "./components/Services/ServicesComponent";
 import Sidebar from "./components/Sidebar/SidebarComponent";
+import Work from "./components/Work/WorkComponent";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +19,14 @@ function App() {
         onClick={handleMenu}
       ></div>
       <Home isOpen={isOpen} />
+      <About
+        title="About Us"
+        subtitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, sint?"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque voluptatem odit sed laudantium reiciendis et fugit natus quae itaque veniam numquam quam modi harum laborum officia nihil corporis, recusandae sit explicabo quisquam voluptas quibusdam. Nam, neque dolorum eligendi, ea quibusdam hic mollitia, cumque adipisci dolor soluta nobis unde! Veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque voluptatem odit sed laudantium reiciendis et fugit natus quae itaque veniam numquam quam modi harum laborum officia nihil corporis, recusandae sit explicabo quisquam voluptas quibusdam. Nam, neque dolorum eligendi, ea quibusdam hic mollitia, cumque adipisci dolor soluta nobis unde! Veritatis?"
+      />
+      <Services />
+      <Work />
+      <Contact />
       <Sidebar isOpen={isOpen} />
     </>
   );
