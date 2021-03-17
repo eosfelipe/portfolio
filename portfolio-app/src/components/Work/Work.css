@@ -9,7 +9,6 @@
   width: 265px;
   height: 265px;
   margin: 10px;
-  transition: 0.5s;
   text-align: center;
 }
 .work .content .workBx .imgBx,
@@ -44,4 +43,43 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
+}
+.work .title {
+  width: 100%;
+  text-align: center;
+}
+.work .title h2 {
+  position: relative;
+  color: #00bcd4;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.work .title p {
+  max-width: 700px;
+  display: inline-block;
+}
+.work .title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #000;
+}
+.work .title.white h2,
+.work .title.white p {
+  color: #fff;
+}
+.work .title.white h2::before {
+  background: #fff;
+}
+@media screen and (max-width: 448px) {
+  .work .content .workBx {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
 }

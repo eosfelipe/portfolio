@@ -20,8 +20,8 @@ const Work = () => {
   return (
     <section className="work" id="work">
       <div className="title">
-        <h2>Recent Work</h2>
-        <p>
+        <h2 data-aos="fade-up">Recent Work</h2>
+        <p data-aos="fade-up" data-aos-delay="300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At minima
           rerum laborum aliquid, eius voluptatem harum delectus facere. Sunt
           perferendis amet at odio blanditiis et distinctio quae sed laborum

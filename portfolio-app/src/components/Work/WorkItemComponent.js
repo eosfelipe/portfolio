@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkItem = ({ img, name }) => {
   return (
-    <div className="workBx">
+    <div className="workBx" data-aos="fade-up" data-aos-delay="400">
       <div className="imgBx">
         <img src={img} alt={name} />
       </div>

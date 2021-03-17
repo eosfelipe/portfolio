@@ -15,13 +15,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+  transition: all 1s ease-in-out;
   padding: 40px;
   z-index: 100;
   right: -100%;
 }
 .sidebar.active {
   right: 0;
+  transition: 0.5s;
 }
 .sidebar ul {
   display: flex;
@@ -44,4 +45,9 @@
 }
 .sidebar ul li a:hover {
   color: #00bcd4;
+}
+@media screen and (max-width: 448px) {
+  .sidebar ul li a {
+    font-size: 1.5em;
+  }
 }

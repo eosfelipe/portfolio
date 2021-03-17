@@ -19,22 +19,22 @@
 .imgBx img {
   max-width: 100%;
 }
-.title {
+.about .title {
   width: 100%;
   text-align: center;
 }
-.title h2 {
+.about .title h2 {
   position: relative;
   color: #00bcd4;
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.title p {
+.about .title p {
   max-width: 700px;
   display: inline-block;
 }
-.title h2::before {
+.about .title h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -44,10 +44,27 @@
   height: 4px;
   background: #000;
 }
-.title.white h2,
-.title.white p {
+.about .title.white h2,
+.about .title.white p {
   color: #fff;
 }
-.title.white h2::before {
+.about .title.white h2::before {
   background: #fff;
+}
+@media screen and (max-width:991px) {
+  .about .content {
+    flex-direction: column;
+  }
+  .about .content .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+  .about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .about .content .imgBx {
+    margin: 0;
+  }
 }

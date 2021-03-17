@@ -32,8 +32,8 @@ const Services = () => {
   return (
     <section className="services" id="services">
       <div className="title">
-        <h2>Our Services</h2>
-        <p>
+        <h2 data-aos="fade-up">Our Services</h2>
+        <p data-aos="fade-up" data-aos-delay="300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
           animi odio. Rerum molestias, unde cumque, atque iste officiis quae,
           nisi veritatis quo sit assumenda! Corporis quae et ullam debitis

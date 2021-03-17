@@ -88,3 +88,33 @@
 .sci li img:hover {
   transform: scale(0.8);
 }
+@media screen and (max-width: 991px) {
+  .logoText {
+    left: 40px;
+    top: 30px;
+  }
+  .sci {
+    left: 40px;
+    bottom: 0;
+  }
+  .contentBx h2 {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 448px) {
+  .banner .contentBx {
+    padding: 20px;
+  }
+  .logoText {
+    left: 20px;
+  }
+  .sci {
+    left: 20px;
+  }
+  .sci li img {
+    width: 40px;
+  }
+  .contentBx h2 {
+    margin: 5px 0;
+  }
+}

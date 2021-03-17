@@ -5,9 +5,41 @@
   align-items: center;
   flex-direction: column;
 }
+.title {
+  width: 100%;
+  text-align: center;
+}
+.title h2 {
+  position: relative;
+  color: #00bcd4;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.contact .title p {
+  max-width: 700px;
+  display: inline-block;
+}
+.contact .title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #000;
+}
+.contact .title.white h2,
+.contact .title.white p {
+  color: #fff;
+}
+.contact .title.white h2::before {
+  background: #fff;
+}
 .contact .contactForm {
   position: relative;
-  width: 700px;
+  max-width: 700px;
   margin-top: 20px;
 }
 .contact .contactForm .row {
@@ -17,11 +49,12 @@
 .contact .contactForm .row .col50 {
   width: 50%;
   margin: 10px;
+  text-align: right;
 }
 .contact .contactForm .row .col100 {
   width: 100%;
   margin: 10px;
-  text-align: center;
+  text-align: right;
 }
 .contact .contactForm .row input,
 .contact .contactForm .row textarea {
@@ -52,4 +85,27 @@
 }
 .contact .contactForm .row button:hover {
   background: #005764;
+}
+.error {
+  font-size: 12px;
+  color: rgb(255, 113, 113);
+}
+@media screen and (max-width: 991px) {
+  .contact .contactForm {
+    width: 100%;
+  }
+  .contactForm .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact .contactForm .row .col50 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 448px) {
+  .contact {
+    max-width: 100%;
+    width: 100%;
+  }
 }

@@ -1,26 +1,38 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidebar = ({ isOpen }) => {
+const Sidebar = ({ isOpen, handleMenu }) => {
   return (
     <div className={isOpen ? "sidebar active" : "sidebar"}>
-      <ul className="menu">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+      {isOpen && (
+        <ul className="menu" data-aos="fade-up">
+          <li>
+            <a href="#home" onClick={handleMenu}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={handleMenu}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#services" onClick={handleMenu}>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#work" onClick={handleMenu}>
+              Work
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={handleMenu}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      )}
     </div>
   );
 };

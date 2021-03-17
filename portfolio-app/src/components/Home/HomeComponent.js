@@ -9,27 +9,43 @@ const Home = ({ isOpen }) => {
   return (
     <section className="banner" id="home">
       <div className={isOpen ? "imgSidebar activeFilter" : "imgSidebar"}>
-        <img src={Bg} alt="" />
+        <img
+          src={Bg}
+          alt=""
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        />
       </div>
       <div className="contentBx">
         <h5 className="logoText">My_Portfolio</h5>
         <div>
-          <h4>
+          <h4 data-aos="fade-up" data-aos-delay="300">
             <span>Hello</span> I'm
           </h4>
-          <h2>Felipe Escobedo</h2>
-          <h4>I'm a Front End Web Developer</h4>
-          <p>
+          <h2 data-aos="fade-up" data-aos-delay="400">
+            Felipe Escobedo
+          </h2>
+          <h4 data-aos="fade-up" data-aos-delay="500">
+            I'm a Front End Web Developer
+          </h4>
+          <p data-aos="fade-up" data-aos-delay="600">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
             doloremque quae hic, quas assumenda dicta odio alias vero velit?
             Aliquam aut corporis ipsa laudantium nisi perferendis laboriosam
             molestiae? Error, culpa!
           </p>
-          <a href="#about" className="btn">
+          <a
+            href="#about"
+            className="btn"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             About Me
           </a>
         </div>
-        <ul className="sci">
+        <ul className="sci" data-aos="fade-up">
           <li>
             <a href="https://facebook.com">
               <img src={Facebook} alt="facebook" />

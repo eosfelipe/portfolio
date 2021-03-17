@@ -30,3 +30,37 @@ p {
   background: url("./assets/x.svg");
   background-color: #fff;
 }
+.copyright {
+  color: #fff;
+  background: #111;
+  text-align: center;
+  padding: 10px;
+}
+.copyright p {
+  margin: 0;
+  font-size: 14px;
+}
+.copyright p a {
+  color: #00bcd4;
+}
+@media screen and (max-width: 991px) {
+  .banner .imgSidebar {
+    display: none;
+  }
+  .banner .contentBx,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+  .toggle {
+    right: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  section {
+    padding: 40px;
+  }
+  .sidebar.active {
+    width: 100%;
+  }
+}

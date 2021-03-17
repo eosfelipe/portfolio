@@ -4,6 +4,38 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.services .title {
+  width: 100%;
+  text-align: center;
+}
+.services .title h2 {
+  position: relative;
+  color: #00bcd4;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.services .title p {
+  max-width: 700px;
+  display: inline-block;
+}
+.services .title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #000;
+}
+.services .title.white h2,
+.services .title.white p {
+  color: #fff;
+}
+.services .title.white h2::before {
+  background: #fff;
+}
 .content .servicesBx {
   padding: 40px 20px;
   max-width: 340px;
@@ -38,4 +70,18 @@
 }
 .content .servicesBx:hover p {
   color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .services .content .servicesBx {
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .services .content .servicesBx {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
