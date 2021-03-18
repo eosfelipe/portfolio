@@ -10,7 +10,7 @@
 }
 .services .title h2 {
   position: relative;
-  color: #00bcd4;
+  color: var(--primary-color);
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -27,14 +27,14 @@
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #000;
+  background: var(--primary-dark);
 }
 .services .title.white h2,
 .services .title.white p {
-  color: #fff;
+  color: var(--primary-light);
 }
 .services .title.white h2::before {
-  background: #fff;
+  background: var(--primary-light);
 }
 .content .servicesBx {
   padding: 40px 20px;
@@ -42,10 +42,10 @@
   margin: 20px;
   transition: 0.5s;
   text-align: center;
-  background: #f5f5f5;
+  background: var(--primary-light);
 }
 .content .servicesBx:hover {
-  background: #000;
+  background: var(--primary-dark);
 }
 .content .servicesBx img {
   max-width: 80px;
@@ -62,14 +62,14 @@
   transition: 0.5s;
 }
 .content .servicesBx:hover h2 {
-  color: #fff;
+  color: var(--primary-light);
 }
 .content .servicesBx p {
   margin: 0;
   transition: 0.5s;
 }
 .content .servicesBx:hover p {
-  color: #fff;
+  color: var(--primary-light);
 }
 @media screen and (max-width: 991px) {
   .services .content .servicesBx {

@@ -40,28 +40,28 @@
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #333;
-  color: #fff;
+  background: var(--primary-dark);
+  color: var(--primary-light);
   padding: 0 5px;
 }
 .contentBx h4 {
   font-size: 1.5em;
-  color: #333;
+  color: var(--primary-dark);
   font-weight: 300;
 }
 .contentBx h4 span {
-  color: #00bcd4;
+  color: var(--primary-color);
   font-size: 1.5em;
   font-weight: 700;
 }
 .contentBx h2 {
   font-size: 3em;
-  color: #333;
+  color: var(--primary-dark);
   line-height: 1em;
 }
 .btn {
-  background: #00bcd4;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--primary-light);
   padding: 10px 30px;
   display: inline-block;
   text-decoration: none;

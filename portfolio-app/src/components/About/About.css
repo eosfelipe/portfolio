@@ -1,5 +1,5 @@
 .about {
-  background: #000;
+  background: var(--primary-dark);
 }
 .content {
   display: flex;
@@ -11,7 +11,7 @@
   width: 49%;
 }
 .textBx p {
-  color: #fff;
+  color: var(--primary-light);
 }
 .about .imgBx {
   margin-left: 40px;
@@ -25,7 +25,7 @@
 }
 .about .title h2 {
   position: relative;
-  color: #00bcd4;
+  color: var(--primary-color);
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -42,14 +42,14 @@
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #000;
+  background: var(--primary-dark);
 }
 .about .title.white h2,
 .about .title.white p {
-  color: #fff;
+  color: var(--primary-light);
 }
 .about .title.white h2::before {
-  background: #fff;
+  background: var(--primary-light);
 }
 @media screen and (max-width:991px) {
   .about .content {

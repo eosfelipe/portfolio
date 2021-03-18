@@ -11,7 +11,7 @@
 }
 .sidebar {
   position: fixed;
-  background: #000;
+  background: var(--primary-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@
   list-style: none;
 }
 .sidebar ul li a {
-  color: #fff;
+  color: var(--primary-light);
   text-decoration: none;
   font-size: 2em;
   margin: 10px 0;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 .sidebar ul li a:hover {
-  color: #00bcd4;
+  color: var(--primary-color);
 }
 @media screen and (max-width: 448px) {
   .sidebar ul li a {

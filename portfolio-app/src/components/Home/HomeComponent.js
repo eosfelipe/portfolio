@@ -1,9 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Bg from "../../assets/bg.jpg";
-import Facebook from "../../assets/facebook.svg";
+import Github from "../../assets/github.svg";
 import Twitter from "../../assets/twitter.svg";
-import Instagram from "../../assets/instagram.svg";
 
 const Home = ({ isOpen }) => {
   return (
@@ -47,18 +46,13 @@ const Home = ({ isOpen }) => {
         </div>
         <ul className="sci" data-aos="fade-up">
           <li>
-            <a href="https://facebook.com">
-              <img src={Facebook} alt="facebook" />
+            <a href="https://github.com/eosfelipe">
+              <img src={Github} alt="github" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com">
               <img src={Twitter} alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <img src={Instagram} alt="instagram" />
             </a>
           </li>
         </ul>

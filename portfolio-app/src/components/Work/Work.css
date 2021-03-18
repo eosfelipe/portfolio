@@ -31,7 +31,7 @@
   object-fit: cover;
 }
 .work .content .workBx .textBx {
-  background: #000;
+  background: var(--primary-dark);
   opacity: 0;
   transition: 0.5s;
 }
@@ -39,7 +39,7 @@
   opacity: 1;
 }
 .work .content .workBx .textBx h3 {
-  color: #fff;
+  color: var(--primary-light);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
@@ -50,7 +50,7 @@
 }
 .work .title h2 {
   position: relative;
-  color: #00bcd4;
+  color: var(--primary-color);
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -67,14 +67,14 @@
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #000;
+  background: var(--primary-dark);
 }
 .work .title.white h2,
 .work .title.white p {
-  color: #fff;
+  color: var(--primary-light);
 }
 .work .title.white h2::before {
-  background: #fff;
+  background: var(--primary-light);
 }
 @media screen and (max-width: 448px) {
   .work .content .workBx {

@@ -1,5 +1,5 @@
 .contact {
-  background: #000;
+  background: var(--primary-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 .title h2 {
   position: relative;
-  color: #00bcd4;
+  color: var(--primary-color);
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -28,14 +28,14 @@
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #000;
+  background: var(--primary-dark);
 }
 .contact .title.white h2,
 .contact .title.white p {
-  color: #fff;
+  color: var(--primary-light);
 }
 .contact .title.white h2::before {
-  background: #fff;
+  background: var(--primary-light);
 }
 .contact .contactForm {
   position: relative;
@@ -63,7 +63,7 @@
   border: none;
   outline: none;
   background: #111;
-  color: #fff;
+  color: var(--primary-light);
   font-size: 16px;
   resize: none;
 }
@@ -72,8 +72,8 @@
 }
 .contact .contactForm .row button {
   font-size: 1em;
-  background: #00bcd4;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--primary-light);
   padding: 10px 30px;
   display: inline-block;
   font-weight: 400;

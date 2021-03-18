@@ -1,7 +1,10 @@
 import React from "react";
 import "./Contact.css";
+import axios from "axios";
 import { Formik } from "formik";
 import * as yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formSchema = yup.object().shape({
@@ -13,9 +16,53 @@ const Contact = () => {
     phone: yup.string().required("This field is required"),
   });
 
+  const sendMail = async (body) => {
+    axios.defaults.headers.post["Content-Type"] = "application/json";
+    // console.log(process.env.REACT_APP_MAIL);
+    try {
+      const { data } = await axios.post(
+        `https://formsubmit.co/ajax/${process.env.REACT_APP_MAIL}`,
+        body
+      );
+      if (data.success === "true") {
+        toast.dark(data.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        toast.error(data.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
   const onSubmit = (values, { setSubmitting, resetForm }) => {
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      sendMail(values);
       setSubmitting(false);
       resetForm({ values: "" });
     }, 400);
@@ -23,6 +70,7 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
+      <ToastContainer />
       <Formik
         initialValues={{
           name: "",

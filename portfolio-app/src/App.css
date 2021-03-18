@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+:root {
+  --primary-light: #f5f5f5;
+  --primary-color: #00bcd4;
+  --primary-dark: #141414;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+}
+body {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
 }
 section {
   padding: 100px;
@@ -22,16 +31,16 @@ p {
   width: 40px;
   height: 40px;
   background: url("./assets/menu-alt-3.svg");
-  background-color: #fff;
+  background-color: var(--primary-light);
   cursor: pointer;
   z-index: 10000;
 }
 .active {
   background: url("./assets/x.svg");
-  background-color: #fff;
+  background-color: var(--primary-light);
 }
 .copyright {
-  color: #fff;
+  color: var(--primary-light);
   background: #111;
   text-align: center;
   padding: 10px;
@@ -41,7 +50,18 @@ p {
   font-size: 14px;
 }
 .copyright p a {
-  color: #00bcd4;
+  color: var(--primary-color);
+}
+
+::selection {
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--primary-light);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }
 @media screen and (max-width: 991px) {
   .banner .imgSidebar {
