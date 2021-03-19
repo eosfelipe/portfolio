@@ -38,7 +38,11 @@ function App() {
       <div className="copyright">
         <p>
           Copyright &copy; {new Date().getFullYear()}{" "}
-          <a href="#" target="_blank">
+          <a
+            href="https://github.com/eosfelipe"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             @eosfelipe
           </a>
           . All Right Reserved.
