@@ -1,6 +1,6 @@
-import React from "react";
-import "./About.css";
-import Img from "../../assets/about.jpg";
+import React from 'react';
+import './About.css';
+import Img from '../../assets/about.jpg';
 
 const About = ({ title, subtitle, description }) => {
   return (

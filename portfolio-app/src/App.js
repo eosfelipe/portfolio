@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./App.css";
-import About from "./components/About/AboutComponent";
-import Contact from "./components/Contact/ContactComponent";
-import Home from "./components/Home/HomeComponent";
-import Services from "./components/Services/ServicesComponent";
-import Sidebar from "./components/Sidebar/SidebarComponent";
-import Work from "./components/Work/WorkComponent";
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './App.css';
+import About from './components/About/AboutComponent';
+import Contact from './components/Contact/ContactComponent';
+import Home from './components/Home/HomeComponent';
+import Services from './components/Services/ServicesComponent';
+import Sidebar from './components/Sidebar/SidebarComponent';
+import Work from './components/Work/WorkComponent';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +16,14 @@ function App() {
       duration: 2000,
     });
     AOS.refresh();
-  }, []);;
+  }, []);
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
     <>
       <div
-        className={isOpen ? "toggle active" : "toggle"}
+        className={isOpen ? 'toggle active' : 'toggle'}
         onClick={handleMenu}
       ></div>
       <Home isOpen={isOpen} />
@@ -37,7 +37,7 @@ function App() {
       <Contact />
       <div className="copyright">
         <p>
-          Copyright &copy; {new Date().getFullYear()}{" "}
+          Copyright &copy; {new Date().getFullYear()}{' '}
           <a
             href="https://github.com/eosfelipe"
             target="_blank"

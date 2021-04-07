@@ -1,9 +1,9 @@
-import React from "react";
-import "./Sidebar.css";
+import React from 'react';
+import './Sidebar.css';
 
 const Sidebar = ({ isOpen, handleMenu }) => {
   return (
-    <div className={isOpen ? "sidebar active" : "sidebar"}>
+    <div className={isOpen ? 'sidebar active' : 'sidebar'}>
       {isOpen && (
         <ul className="menu" data-aos="fade-up">
           <li>

@@ -1,13 +1,13 @@
-import React from "react";
-import "./Home.css";
-import Bg from "../../assets/bg.jpg";
-import Github from "../../assets/github.svg";
-import Twitter from "../../assets/twitter.svg";
+import React from 'react';
+import './Home.css';
+import Bg from '../../assets/bg.jpg';
+import Github from '../../assets/github.svg';
+import Twitter from '../../assets/twitter.svg';
 
 const Home = ({ isOpen }) => {
   return (
     <section className="banner" id="home">
-      <div className={isOpen ? "imgSidebar activeFilter" : "imgSidebar"}>
+      <div className={isOpen ? 'imgSidebar activeFilter' : 'imgSidebar'}>
         <img
           src={Bg}
           alt=""

@@ -1,32 +1,32 @@
-import React from "react";
-import "./Contact.css";
-import axios from "axios";
-import { Formik } from "formik";
-import * as yup from "yup";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React from 'react';
+import './Contact.css';
+import axios from 'axios';
+import { Formik } from 'formik';
+import * as yup from 'yup';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const formSchema = yup.object().shape({
-    name: yup.string().required("This field is required"),
+    name: yup.string().required('This field is required'),
     email: yup
       .string()
-      .email("This field must be a valid e-mail")
-      .required("This field is required"),
-    phone: yup.string().required("This field is required"),
+      .email('This field must be a valid e-mail')
+      .required('This field is required'),
+    phone: yup.string().required('This field is required'),
   });
 
   const sendMail = async (body) => {
-    axios.defaults.headers.post["Content-Type"] = "application/json";
+    axios.defaults.headers.post['Content-Type'] = 'application/json';
     // console.log(process.env.REACT_APP_MAIL);
     try {
       const { data } = await axios.post(
         `https://formsubmit.co/ajax/${process.env.REACT_APP_MAIL}`,
         body
       );
-      if (data.success === "true") {
+      if (data.success === 'true') {
         toast.dark(data.message, {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -36,7 +36,7 @@ const Contact = () => {
         });
       } else {
         toast.error(data.message, {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -48,7 +48,7 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
       toast.error(error, {
-        position: "top-right",
+        position: 'top-right',
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -64,7 +64,7 @@ const Contact = () => {
       // alert(JSON.stringify(values, null, 2));
       sendMail(values);
       setSubmitting(false);
-      resetForm({ values: "" });
+      resetForm({ values: '' });
     }, 400);
   };
 
@@ -73,10 +73,10 @@ const Contact = () => {
       <ToastContainer />
       <Formik
         initialValues={{
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
         }}
         validationSchema={formSchema}
         onSubmit={onSubmit}
@@ -159,9 +159,9 @@ const Contact = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="col100" style={{ textAlign: "center" }}>
+                <div className="col100" style={{ textAlign: 'center' }}>
                   <button type="submit" disabled={isSubmitting}>
-                    {!isSubmitting ? "Send" : "Sending..."}
+                    {!isSubmitting ? 'Send' : 'Sending...'}
                   </button>
                 </div>
               </div>

@@ -1,20 +1,20 @@
-import React from "react";
-import "./Work.css";
-import WorkItem from "./WorkItemComponent";
+import React from 'react';
+import './Work.css';
+import WorkItem from './WorkItemComponent';
 
 const Work = () => {
   const projects = [
     {
-      img: require("../../assets/project01.jpg"),
-      name: "project 01",
+      img: require('../../assets/project01.jpg'),
+      name: 'project 01',
     },
     {
-      img: require("../../assets/project02.jpg"),
-      name: "project 02",
+      img: require('../../assets/project02.jpg'),
+      name: 'project 02',
     },
     {
-      img: require("../../assets/project03.jpg"),
-      name: "project 03",
+      img: require('../../assets/project03.jpg'),
+      name: 'project 03',
     },
   ];
   return (

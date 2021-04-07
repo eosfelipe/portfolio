@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const useForm = (initialState = {}, onSubmit) => {
   const [formData, setFormData] = useState(initialState);

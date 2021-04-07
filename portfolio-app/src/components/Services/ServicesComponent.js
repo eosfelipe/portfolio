@@ -1,32 +1,32 @@
-import React from "react";
-import "./Services.css";
-import ServiceItem from "./ServicesItemComponent";
+import React from 'react';
+import './Services.css';
+import ServiceItem from './ServicesItemComponent';
 
 const Services = () => {
   const services = [
     {
-      img: require("../../assets/webcomponents-dot-org.svg"),
-      title: "Web Design",
+      img: require('../../assets/webcomponents-dot-org.svg'),
+      title: 'Web Design',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?',
     },
     {
-      img: require("../../assets/react.svg"),
-      title: "Web Developer",
+      img: require('../../assets/react.svg'),
+      title: 'Web Developer',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?',
     },
     {
-      img: require("../../assets/netlify.svg"),
-      title: "CI/CD",
+      img: require('../../assets/netlify.svg'),
+      title: 'CI/CD',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?',
     },
     {
-      img: require("../../assets/github.svg"),
-      title: "Deployment",
+      img: require('../../assets/github.svg'),
+      title: 'Deployment',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque vitae impedit nisi ipsam perspiciatis similique pariatur consectetur rem dolores quidem possimus magnam excepturi aspernatur, debitis illum vero recusandae maiores?',
     },
   ];
   return (
